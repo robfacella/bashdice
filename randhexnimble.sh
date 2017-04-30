@@ -31,35 +31,4 @@ else
    esac
 fi
 
-num2=$(( $RANDOM % 16 ))
-if [ ${num2} -lt 10 ] ; then
-    hexchar2=$num2
-else
-   case ${num2} in
-     10)
-       hexchar2="A"
-       ;;
-     11)
-       hexchar2="B"
-       ;;
-     12)
-       hexchar2="C"
-       ;;
-     13)
-       hexchar2="D"
-       ;;
-     14)
-       hexchar2="E"
-       ;;
-     15)
-       hexchar2="F"
-       ;;
-     *)
-       hexchar2="A"
-       echo "Something's Broken!"
-       ;;
-   esac
-fi
-hex="${hexchar}${hexchar2}"
-echo ${hex}
-
+echo ${hexchar}
