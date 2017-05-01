@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 echo "Random number from 0 to 9, A to F"
 num=$(( $RANDOM % 16 ))
-
 if [ ${num} -lt 10 ] ; then
     hexchar=$num
 else
